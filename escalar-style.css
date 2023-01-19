@@ -1,0 +1,43 @@
+*{
+     margin: 0;
+     padding: 0;
+ }
+:root {
+    --size: 120px;
+    --font-size: 4rem;
+}
+
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background: rgb(4, 0, 0);
+    background: linear-gradient(355deg, rgba(4, 0, 0, 1) 0%, rgba(40, 24, 24, 1) 100%);
+}
+.bloque{
+    width: 200px;
+    height: 200px;
+    border-width: 1px;
+    border-style: solid;
+    background: #212938;
+    transform: rotate(70deg);
+    animation-duration: 3s;
+    animation-name: escalar;
+    animation-iteration-count: infinite;
+}
+@keyframes escalar {
+
+    from{
+        transform: rotate(70deg);
+
+    }
+
+    to{
+        transform: rotate(430deg);
+
+    }
+}
+
